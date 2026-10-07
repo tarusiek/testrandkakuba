@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f9e7ed"><title>Nasz plan ♡</title><link rel="stylesheet" href="../css/style_main.css"><script src="../scripts/script.js" defer></script></head>
+<body data-page="plan">
+<header class="site-header"><a class="brand" href="../index.html">Ty + ja <span>♡</span></a><a href="kalendarz.html">← Zmień termin</a></header>
+<main class="planner wide">
+<nav class="steps" aria-label="Etapy planowania"><a href="kalendarz.html">✓ Nasz termin</a><span aria-current="step">2. Nasz plan</span><span>3. Gotowe ♡</span></nav>
+<div class="section-heading"><h1>Gdzie zabieramy nasze serca?</h1><p>Wybierz to, na co masz ochotę. Resztę wymyślimy razem.</p></div>
+<form id="plan-form">
+<fieldset class="activities"><legend>Nasz pomysł na randkę <span>Wybierz jeden</span></legend>
+<div class="activity-grid">
+<label class="activity"><input type="radio" name="activity" value="Spacerek" required><img src="../assets/park.jpg" alt="" loading="lazy"><span><strong>Spacerek</strong><small>Dokądkolwiek, byle za rękę</small></span><i aria-hidden="true">♡</i></label>
+<label class="activity"><input type="radio" name="activity" value="Kino"><img src="../assets/kino.jpg" alt="" loading="lazy"><span><strong>Wieczór w kinie</strong><small>Popcorn do podziału</small></span><i aria-hidden="true">♡</i></label>
+<label class="activity"><input type="radio" name="activity" value="Maczek"><img class="food-logo" src="../assets/mcd.png" alt="" loading="lazy"><span><strong>Randka w Maczku</strong><small>Moje frytki są Twoje</small></span><i aria-hidden="true">♡</i></label>
+<label class="activity"><input type="radio" name="activity" value="Kręgle"><img src="../assets/kregle.jpg" alt="" loading="lazy"><span><strong>Kręgle</strong><small>Przegrany daje buziaka</small></span><i aria-hidden="true">♡</i></label>
+<label class="activity"><input type="radio" name="activity" value="Minigolf"><img src="../assets/golf.webp" alt="" loading="lazy"><span><strong>Minigolf</strong><small>Mała, słodka rywalizacja</small></span><i aria-hidden="true">♡</i></label>
+<label class="activity surprise"><input type="radio" name="activity" value="Niespodzianka — Ty wybierasz"><div class="surprise-art" aria-hidden="true">✉<span>♡</span></div><span><strong>Zaskocz mnie</strong><small>Oddaję plan w Twoje ręce</small></span><i aria-hidden="true">♡</i></label>
+</div></fieldset>
+<div class="plan-layout"><section class="paper details"><h2>Małe rzeczy, które lubisz</h2>
+<label for="food">A może coś pysznego?</label><select id="food" name="food"><option>Wybierzmy na miejscu</option><option>Kawa i coś słodkiego</option><option>Pizza dla dwojga</option><option>Sushi</option><option>Burgery i frytki</option><option>Tylko spacer, bez jedzenia</option></select>
+<label for="transport">Jak się spotykamy?</label><select id="transport" name="transport"><option>Dogadamy się przed randką</option><option>Przyjedź po mnie ♡</option><option>Spotkajmy się na miejscu</option><option>Chodźmy razem pieszo</option></select>
+<label for="note">Coś ode mnie <span class="optional">(opcjonalnie)</span></label><textarea id="note" name="note" maxlength="600" rows="3" placeholder="Mój pomysł, ulubione miejsce, coś, czego nie jem…"></textarea><div class="character-count"><span id="note-count">0</span>/600</div>
+</section><aside class="paper summary"><h2>Nasza randka</h2><dl id="plan-summary"></dl><p class="summary-note">Dobry plan. Najlepsze towarzystwo. ♡</p><p id="send-status" class="form-error" role="status" aria-live="polite"></p><button id="send-button" class="button" type="submit">Wyślij mój plan ♡</button><p class="help">Twój wybór trafi prosto do mnie.</p></aside></div>
+</form></main><footer>Z Tobą nawet zwykły dzień jest trochę piękniejszy.</footer><noscript><p class="noscript">Włącz JavaScript, aby wysłać plan.</p></noscript></body></html>
+

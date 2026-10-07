@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f9e7ed"><title>Nasz termin ♡</title><link rel="stylesheet" href="../css/style_main.css"><script src="../scripts/script.js" defer></script></head>
+<body data-page="date">
+<header class="site-header"><a class="brand" href="../index.html">Ty + ja <span>♡</span></a><a href="../index.html">Wróć do zaproszenia</a></header>
+<main class="planner">
+<nav class="steps" aria-label="Etapy planowania"><span aria-current="step">1. Nasz termin</span><span>2. Nasz plan</span><span>3. Gotowe ♡</span></nav>
+<div class="section-heading"><h1>Kiedy Cię porwać?</h1><p>Zarezerwujmy kawałek dnia tylko dla nas.</p></div>
+<form id="date-form" class="paper date-paper">
+ <div class="date-layout"><section>
+ <label for="date">Dzień naszej randki</label><input id="date" name="date" type="date" required>
+ <div class="quick-options" aria-label="Szybki wybór dnia"><button type="button" data-day="0">Dzisiaj</button><button type="button" data-day="1">Jutro</button><button type="button" data-day="saturday">W sobotę</button></div>
+ <label for="time">O której się widzimy?</label><input id="time" name="time" type="time" required>
+ <div class="quick-options" aria-label="Szybki wybór godziny"><button type="button" data-time="12:00">12:00 ☀</button><button type="button" data-time="16:00">16:00 ☕</button><button type="button" data-time="19:00">19:00 ☾</button></div>
+ <label class="check-line"><input type="checkbox" id="flexible"> Godzina jest orientacyjna, dogadamy szczegóły</label>
+
+ </section><aside class="date-preview"><span>Nasz mały wielki dzień</span><strong id="preview-day">♡</strong><p id="preview-date">Wybierz datę obok</p><p id="preview-time">Na dobre rzeczy warto czekać.</p></aside></div>
+ <p class="form-error" id="date-error" role="alert"></p>
+ <div class="form-bottom"><span>Już nie mogę się doczekać.</span><button class="button" type="submit">Teraz wybierzmy plan <span aria-hidden="true">→</span></button></div>
+</form>
+</main><footer>Najważniejsze, że razem.</footer><noscript><p class="noscript">Włącz JavaScript, aby zaplanować i wysłać randkę.</p></noscript>
+</body></html>
+
